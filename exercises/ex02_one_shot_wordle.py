@@ -2,17 +2,16 @@
 
 __author__ = "730486147"
 
-word: str = "knoll"
+word: str = "python"
 guess: str = input(f"What is your {len(word)}-letter guess? ")
 index: int = 0
-result: str = ("\U00002B1C"*len(word))
+result: str = ("\U00002B1C" * len(word))
 
 while len(guess) != len(word):
     guess = str(input(f"That was not {len(word)} letters! Try again: "))
 if guess == word:
-    print("\U0001F7E9"*len(word))
+    print("\U0001F7E9" * len(word))
     print("Woo! You got it!")
-    quit()
 else:
     while index < len(word):
         counter: int = 0
