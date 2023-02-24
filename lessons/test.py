@@ -1,1 +1,2 @@
-print(bool(not True or not False))
+WORD: str = "happy"
+print(len(WORD))
