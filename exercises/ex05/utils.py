@@ -34,4 +34,3 @@ def sub(ints: list[int], start: int, end: int) -> list[int]:
     for i in range(start, end):
         segment.append(ints[i])
     return (segment)
-

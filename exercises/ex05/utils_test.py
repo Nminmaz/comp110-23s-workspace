@@ -9,19 +9,19 @@ from exercises.ex05.utils import only_evens, sub, concat
 def test_all_even() -> None:
     """Tests the case where all are even."""
     test_list: list[int] = [2, 4, 8]
-    assert(only_evens(test_list)) == test_list
+    assert (only_evens(test_list)) == test_list
 
 
 def test_some_even() -> None:
     """Tests the case where some are even."""
     test_list: list[int] = [2, 4, 3]
-    assert(only_evens(test_list)) == [2, 4]
+    assert (only_evens(test_list)) == [2, 4]
 
 
 def test_all_odd() -> None:
     """Tests the case where all are odd."""
     test_list: list[int] = [2, 4, 3]
-    assert(only_evens(test_list)) == [2, 4]
+    assert (only_evens(test_list)) == [2, 4]
 
 
 def test_full_lists() -> None:
@@ -50,10 +50,12 @@ def test_in_domain() -> None:
     test_list = [10, 20, 30, 40]
     assert sub(test_list, 1, 3) == [20, 30]
 
+
 def test_negative() -> None:
     """Tests when the start is negative."""
     test_list = [10, 20, 30, 40]
     assert sub(test_list, -1, 3) == [10, 20, 30]
+
 
 def test_wrong_end() -> None:
     """Tests when the start is greater than the length."""
