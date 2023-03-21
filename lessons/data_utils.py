@@ -29,3 +29,4 @@ def columnar(table: list[dict[str,str]]) -> dict[str,list[str]]:
     for key in first_row:
         # for each key, make a dictionary entry with all column values
         result[key] = column_vals(table, key)
+    return result
