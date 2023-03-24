@@ -4,8 +4,8 @@
 __author__ = "730486147"
 
 
-def value_exists(numbas: dict[str, int], numba: int) -> bool:
-    for i in numbas:
-        if numbas[i] == numba:
+def value_exists(dictionary: dict[str, int], number: int) -> bool:
+    for i in dictionary:
+        if dictionary[i] == number:
             return True
     return False
