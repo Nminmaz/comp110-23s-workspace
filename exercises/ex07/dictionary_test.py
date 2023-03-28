@@ -9,20 +9,20 @@ from exercises.ex07.dictionary import invert, favorite_color, count
 
 def test_long() -> None:
     """Tests the invert function on a long list."""
-    test_dict: dict[str, str] = {'a': 'z', 'b' : 'y', 'c': 'x'}
+    test_dict: dict[str, str] = {'a': 'z', 'b': 'y', 'c': 'x'}
     assert (invert(test_dict)) == {'z': 'a', 'y': 'b', 'x': 'c'}
 
 
 def test_short() -> None:
     """Tests the invert function on a short list."""
     test_dict: dict[str, str] = {'apple': 'cat'}
-    assert(invert(test_dict)) == {'cat': 'apple'}
+    assert (invert(test_dict)) == {'cat': 'apple'}
 
 
 def test_empty() -> None:
     """Tests when a list will have duplicate keys."""
     test_dict: dict[str, str] = {}
-    assert(invert(test_dict)) == {}
+    assert (invert(test_dict)) == {}
 
 
 def test_max() -> None:
